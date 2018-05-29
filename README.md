@@ -39,4 +39,7 @@
 > deployedContract = StorageContract.new({data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
 > contractInstance = StorageContract.at(deployedContract.address)
 
+> deployedContract.setN(10, {from: web3.eth.accounts[1]})
+> deployedContract.getN()
+
 ```
